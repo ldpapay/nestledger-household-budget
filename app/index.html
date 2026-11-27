@@ -3,33 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="NestLedger is a household budget planner for the Alvarez family, November 2026, with transactions, budgets, goals and reports.">
-<title>NestLedger, Household Budget</title>
+<meta name="description" content="NestLedger is the Alvarez family's household budget planner for November 2026: income, spending, budgets, savings goals and monthly reports, all in one place.">
+<title>NestLedger — Household Budget, November 2026</title>
 <link rel="stylesheet" href="style.css">
 <script type="module" src="main.js"></script>
 </head>
 <body>
-<header class="top">
-  <a class="brand" href="#/">NestLedger</a>
-  <nav>
-    <a href="#/" data-nav="dashboard">Dashboard</a>
-    <a href="#/transactions" data-nav="transactions">Transactions</a>
-    <a href="#/budget" data-nav="budget">Budget</a>
-    <a href="#/goals" data-nav="goals">Goals</a>
-    <a href="#/reports" data-nav="reports">Reports</a>
-  </nav>
-  <div class="month">November 2026, family of 4</div>
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="wordmark" href="#/">NestLedger</a>
+    <p class="tagline">The Alvarez family ledger</p>
+    <nav class="primary-nav" aria-label="Sections">
+      <a href="#/" data-nav="dashboard">Dashboard</a>
+      <a href="#/transactions" data-nav="transactions">Transactions</a>
+      <a href="#/budget" data-nav="budget">Budget</a>
+      <a href="#/goals" data-nav="goals">Goals</a>
+      <a href="#/reports" data-nav="reports">Reports</a>
+    </nav>
+    <p class="month-line">November 2026 · Family of four · All figures in USD</p>
+  </div>
 </header>
-<main id="app"></main>
-<footer>
-  <p>NestLedger is a household budget planner for the Alvarez family. All figures are in USD. Data is stored only in your browser, no account, no network.</p>
-  <nav class="footnav">
+<main id="app" aria-live="polite"></main>
+<footer class="colophon">
+  <p><strong>NestLedger</strong> is a household budget planner for the Alvarez family.
+  Every figure on this site is real data for November 2026. Nothing leaves your
+  browser: transactions you add are stored only on this device, there is no
+  account, no sign-in and no network request.</p>
+  <nav class="footer-nav" aria-label="Sections">
     <a href="#/">Dashboard</a>
     <a href="#/transactions">Transactions</a>
     <a href="#/budget">Budget</a>
     <a href="#/goals">Goals</a>
     <a href="#/reports">Reports</a>
   </nav>
+  <p class="fine-print">Built as a set of plain static files. Open any section above to
+  see it work: add a transaction, change a budget, or put money toward a goal.</p>
 </footer>
 </body>
 </html>
